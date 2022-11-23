@@ -60,7 +60,7 @@ public class LoginServlet extends HttpServlet {
                 cookie.setMaxAge(60 * 60 * 24 * 30);
                 response.addCookie(cookie);
                 // 跳转到main.jsp
-                RequestDispatcher dispatcher = request.getRequestDispatcher("userlist.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("booklist.jsp");
                 dispatcher.forward(request, response);
             } else { // 不合法的用户
                 out.println("登录失败!");
